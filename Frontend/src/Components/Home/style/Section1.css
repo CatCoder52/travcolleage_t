@@ -76,6 +76,28 @@
 }
 
 
+@media screen and (max-width: 700px) {
+  .image1{
+    height: 80vh;
+    object-fit: cover;
+    width: 300px;
+  }
+  .image2{
+    height: 39vh;
+    object-fit: cover;
+    width: 350px;
+    margin-bottom: 5px;
+  }
+  .image3{
+    height: 39vh;
+    object-fit: cover;
+    width: 350px;
+    margin-top: 5px;
+  }
+  .section1-text-section{
+    margin-top: 80px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .section1-body{

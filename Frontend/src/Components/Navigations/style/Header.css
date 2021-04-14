@@ -1,0 +1,43 @@
+.logo{
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.header-bg {
+    background-color: #ffffff;
+}
+.logo-text {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+.header-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+.login-text{
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 30px;
+  margin-top: 20px;
+  margin-right: 20px!important;
+}
+.btn1:hover{
+  background-color: #0480fc!important;
+  color:#ffffff;
+}
+.btn1{
+  width: 150px;
+  height: 50px;
+  background-color: #0480fc;
+  color:#ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 5px;
+  box-shadow: 0 0 10px 0 #a2d0ff;
+  filter: drop-shadow(0 0 10px #A2D0FF);
+}
