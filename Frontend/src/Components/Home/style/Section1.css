@@ -1,22 +1,23 @@
 
-
-.txt2{
-  font-size: 15px;
-}
-.btn-container{
-  flex-direction: row;
-  margin-top: 15px;
-}
 .section1-body{
   background-color:#f2f9ff ;
-  height: 500px;
+  height: 700px;
 }
 .section-container{
-  padding: 50px;
+  padding: 90px;
 }
 .txt1{
   font-weight: bolder;
   font-size: 60px
+}
+.txt2{
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.btn-container{
+  flex-direction: row;
+  margin-top: 15px;
 }
 .btn1{
   width: 200px;
@@ -42,11 +43,37 @@
     box-shadow: 0 0 24px 0 25% #9f9f9f;
     filter: drop-shadow(0 0 24px rgba(159,159,159,.25));
 }
+.btn1:hover{
+  background-color: #0480fc!important;
+  color:#ffffff;
+}
 .btn2:hover{
   background-color: #ffffff!important;
   color:#0480fc;
 }
-
+.iamge-section{
+  flex-direction: row;
+}
+.image1{
+  height: 80vh;
+  object-fit: cover;
+  width: 330px;
+}
+.image2{
+  height: 39vh;
+  object-fit: cover;
+  width: 350px;
+  margin-bottom: 5px;
+}
+.image3{
+  height: 39vh;
+  object-fit: cover;
+  width: 350px;
+  margin-top: 5px;
+}
+.section1-text-section{
+  margin-top: 80px;
+}
 
 
 
@@ -90,4 +117,25 @@
     background-color: #ffffff!important;
     color:#0480fc;
   }
+  .section1-iamge-section{
+    margin-top: 50px;
+  }
+  .image1{
+    height: 50vh;
+    object-fit: cover;
+    width: 170px;
+  }
+  .image2{
+    height: 24vh;
+    object-fit: cover;
+    width: 150px;
+    margin-bottom: 5px;
+  }
+  .image3{
+    height: 24vh;
+    object-fit: cover;
+    width: 150px;
+    margin-top: 5px;
+  }
+  
 }

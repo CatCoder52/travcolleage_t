@@ -6,7 +6,7 @@ const Section1 = () => {
         <div className="section1-body">
             <div className="section-container">
                 <Row>
-                    <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+                    <Col className="section1-text-section" xs={12} sm={12} md={12} lg={6} xl={6}>
                         <p className="txt1">
                             Your College Journey <br /> Starts Here
                         </p>
@@ -20,6 +20,32 @@ const Section1 = () => {
 
                             <Button className="btn2">Download App</Button>
                         </div>
+                    </Col>
+                    <Col  className="section1-iamge-section" xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <Row>
+                            <Col xs={6}>
+                                <img
+                                    className="image1"
+                                    src={'https://trav4college.com/assets/images/home/hero-1.jpg'}
+                                />
+                            </Col>
+                            <Col xs={6}>
+                                <Row>
+                                    <Col xs={12}>
+                                        <img
+                                             className="image2"
+                                            src={'https://trav4college.com/assets/images/home/hero-2.jpg'}
+                                        />
+                                    </Col>
+                                    <Col xs={12}>
+                                        <img
+                                          className="image3"
+                                            src={'https://trav4college.com/assets/images/home/hero-3.jpg'}
+                                        />
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </div>
