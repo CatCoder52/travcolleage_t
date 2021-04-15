@@ -1,0 +1,38 @@
+.section3-body {
+    background-color: #f2f9ff;
+    margin-top: 100px;
+    height: 700px;
+}
+.section3-topic {
+    padding-top: 8%;
+}
+.section3-topic-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-tetx-header{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px ;
+}
+.card-text-sub{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+/* =========mobile screen====== */
+@media screen and (max-width: 479px) {
+  .section3-body {
+    background-color: #f2f9ff;
+    margin-top: 100px;
+    height: 1600px;
+}
+    .section3-topic {
+        padding-top: 20%;
+    }
+    .section3-topic-text {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
