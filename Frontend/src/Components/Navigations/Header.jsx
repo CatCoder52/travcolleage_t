@@ -5,12 +5,12 @@ import './style/Header.css';
 const Header = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className="header-bg">
+            <Navbar  fixed="top" collapseOnSelect expand="lg" className="header-bg">
                 <Navbar.Brand href="#home" className="logo">
                     <img src={Logo} /> <label className="logo-text">Trav4College</label>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse id="responsive-navbar-nav"  className="mobile">
                     <Nav className="mr-auto">
                         <Nav.Link href="#features" className="header-text">
                             College Application
@@ -32,7 +32,7 @@ const Header = () => {
                         </Nav.Link>
                   
                         <Nav.Link eventKey={2} href="#memes">
-                            <Button className="btn1">Get started</Button>
+                            <Button className="btn-get-started">Get started</Button>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
