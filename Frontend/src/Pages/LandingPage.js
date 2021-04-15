@@ -1,9 +1,10 @@
-import {Section1} from '../Components/Home';
+import {Section1, Section2} from '../Components/Home';
 
 const LandingPage = () => {
     return (
         <div>
             <Section1 />
+            <Section2/>
         </div>
     );
 };

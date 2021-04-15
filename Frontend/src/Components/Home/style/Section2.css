@@ -1,0 +1,69 @@
+.section2-body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.section2-container {
+    display: flex;
+    margin-top: -50px;
+}
+.card-1-style {
+    height: 200px;
+    width: 30rem;
+    border: none;
+    box-shadow: 0 0 24px 0 25% #9f9f9f;
+    filter: drop-shadow(0 0 24px rgba(159, 159, 159, .25));
+}
+
+.what-we-offer-text {
+    font-size: 20px;
+    line-height: 26.4px;
+    font-weight: 800;
+    color: #075cb2;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+.Handling-Fees {
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+.stage2 {
+    background-color: #075cb2;
+    margin-top: 10%;
+}
+
+.stag2-text-1 {
+    font-weight: 800;
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 20px;
+    margin-top: 30%;
+   
+}
+.stage2-text-container{
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+.stag2-text-2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    padding-right: 10px;
+}
+.stag2-text-2-2 {
+    font-size: 20px;
+    color: #ffffff;
+}
+.stage2-text-3 {
+    color: #09cf70;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+}
