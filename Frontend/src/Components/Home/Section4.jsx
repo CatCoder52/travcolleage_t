@@ -14,7 +14,7 @@ const Section4 = () => {
                                 Trav4College is your window to discovering some of the best colleges and universities
                                 around the world and all they have to offer.
                             </p>
-                            <Button className="btn1">Explore Our Partners</Button>
+                            <Button className="section4-btn">Explore Our Partners</Button>
                         </div>
                     </Col>
                     <Col xm={12} md={6}>
