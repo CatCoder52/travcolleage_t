@@ -1,4 +1,4 @@
-import {Section1, Section2, Section3} from '../Components/Home';
+import {Section1, Section2, Section3, Section4} from '../Components/Home';
 
 const LandingPage = () => {
     return (
@@ -6,6 +6,7 @@ const LandingPage = () => {
             <Section1 />
             <Section2/>
             <Section3/>
+            <Section4/>
         </div>
     );
 };
