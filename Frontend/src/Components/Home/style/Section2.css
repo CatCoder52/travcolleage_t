@@ -5,49 +5,63 @@
 .section2-container {
     display: flex;
     margin-top: -50px;
+    margin-bottom: 50%x;
 }
 .card-1-style {
-    height: 200px;
+   
     width: 30rem;
     border: none;
     box-shadow: 0 0 24px 0 25% #9f9f9f;
     filter: drop-shadow(0 0 24px rgba(159, 159, 159, .25));
 }
 
+
+/* ====stag12====== */
 .what-we-offer-text {
     font-size: 20px;
     line-height: 26.4px;
     font-weight: 800;
-    color: #075cb2;
+    color: #008bd9;
     margin-top: 10%;
-    margin-bottom: 30%;
 }
 .Handling-Fees {
     display: flex;
     flex-direction: row-reverse;
     font-weight: 800;
     font-size: 16px;
-    margin-top: 10%;
-    margin-bottom: 30%;
-}
-.stage2 {
-    background-color: #075cb2;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
+
+/* ====stage2====== */
+.stage2 {
+    background-color: #008bd9;
+    height: 150px;
+    margin-top: -10px;
+}
+.stag2-text-1-bg {
+    background-color: #09cf70;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 120px;
+}
 .stag2-text-1 {
     font-weight: 800;
-    font-size: 16px;
+    font-size: 19px;
     color: #ffffff;
-    padding-left: 20px;
-    margin-top: 30%;
-   
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
 }
-.stage2-text-container{
-  margin-top: 20%;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 30px;
+.stage2-text-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
 }
 .stag2-text-2 {
     font-size: 20px;
@@ -66,4 +80,114 @@
     display: flex;
     flex-direction: row-reverse;
     margin-right: 30px;
+}
+
+
+/* ====stage3====== */
+.stag3-text-1 {
+  font-weight: 800;
+  font-size: 19px;
+  color: #000000;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.stage3-text-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+.stag3-text-2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+  padding-right: 10px;
+}
+.stag3-text-2-2 {
+  font-size: 20px;
+  color: #000000;
+}
+.stage3-text-3 {
+  color: #008bd9;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+
+
+/* =====2nd card===== */
+
+/* ====stage2====== */
+.card-2-stag2-text-1 {
+  font-weight: 800;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+.card-2-stage2-text-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 50px;
+}
+.card-2-stag2-text-2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  padding-right: 10px;
+}
+.card-2-stag2-text-2-2 {
+  font-size: 20px;
+  color: #ffffff;
+  
+}
+.card-2-stage2-text-3 {
+  color: #09cf70;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 50px;
+}
+
+/* ====stage3====== */
+.card-2-stag3-text-1 {
+  font-weight: 800;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+.card-2-stage3-text-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+.card-2-stag3-text-2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+  padding-right: 10px;
+}
+.card-2-stag3-text-2-2 {
+  font-size: 20px;
+  color: #000000;
+  
+}
+.card-2-stage3-text-3 {
+  color: #008bd9;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
 }
