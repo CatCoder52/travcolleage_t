@@ -1,4 +1,4 @@
-import {Navbar, Nav, NavDropdown, Button} from 'react-bootstrap';
+import {Navbar, Nav, Button} from 'react-bootstrap';
 import Logo from '../../assets/iconlogo.svg';
 import './style/Header.css';
 
@@ -26,10 +26,10 @@ const Header = () => {
                         <Nav.Link href="#deets" className="login-text">
                             Login
                         </Nav.Link>
-
-                        <Nav.Link eventKey={2} href="#memes">
-                            <Button className="btn-get-started">Get started</Button>
+                        <Nav.Link href="#deets" className="pt-3" >
+                            <Button className="pt-2 btn-get-started">Get started</Button>
                         </Nav.Link>
+                        <Nav.Link eventKey={2} href="#memes" />
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
