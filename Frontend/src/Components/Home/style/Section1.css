@@ -6,6 +6,9 @@
 .section-container{
   padding: 90px;
 }
+.section1-text-section{
+  padding-top: 5%;
+}
 .txt1{
   font-weight: bolder;
   font-size: 60px
@@ -246,6 +249,9 @@
   }
   .section-container{
     padding: 13px;
+  }
+  .section1-text-section{
+    padding-top: 10%;
   }
   .txt1{
     font-weight: bolder;

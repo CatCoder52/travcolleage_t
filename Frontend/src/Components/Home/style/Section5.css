@@ -1,12 +1,45 @@
-.section5-body{
-  background-color: #ffebd1;
-  height: 600px;
-  margin-top: 15%;
+.section5-body {
+    background-color: #ffebd1;
+    height: 700px;
+    margin-top: 15%;
 }
-.section5-topic{
-  padding-top: 5%;
+.section5-topic {
+    padding-top: 5%;
 }
 .section5-topic-text {
-  font-size: 30px;
-  font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
 }
+.section5-sub-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+.section5-sub {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.section5-contact-us{
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.section5-contact-us-text {
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+/* =========mobile screen====== */
+@media screen and (max-width: 479px) {
+  
+      .section3-topic {
+          padding-top: 20%;
+      }
+      .section5-topic-text {
+          font-size: 25px;
+          font-weight: bold;
+      }
+  }
+  

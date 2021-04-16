@@ -1,10 +1,29 @@
+import React from 'react';
+import Slider from 'react-slick';
 import {Card, Col, Row} from 'react-bootstrap';
 import {BiCheckDouble} from 'react-icons/bi';
 import './style/Section2.css';
 
 const Section2 = () => {
+    let settings2 = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 0,
+        slidesToScroll: 5
+    };
     return (
         <div className="section2-body">
+            <div className="d-none d-lg-block  d-md-none text-center">
+                <BannerText />
+            </div>
+        </div>
+    );
+};
+
+const BannerText = () => {
+    return (
+        <div>
             <div className="section2-container  col-12 justify-content-md-center">
                 <Card className="card-1-style">
                     <Card.Body>
@@ -103,4 +122,3 @@ const Section2 = () => {
 };
 
 export default Section2;
- 
