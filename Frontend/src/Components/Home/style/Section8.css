@@ -1,0 +1,22 @@
+.section8-body{
+  background-color: #fee9e8;
+  height: 50%;
+  margin-top: 10%;
+}
+.section8-app-icon-vendor{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.icon-style{
+  height: 90px;
+  padding: 20px;
+}
+
+/* =========mobile screen====== */
+@media screen and (max-width: 479px) {
+  .icon-style{
+    height: 60px;
+    padding: 10px;
+  }
+}
