@@ -1,0 +1,12 @@
+.section7-body{
+  margin-top: 10%;
+}
+.vido{
+  height: 500px;
+}
+/* =========mobile screen====== */
+@media screen and (max-width: 479px) {
+  .vido{
+    height: 200px;
+  }
+}

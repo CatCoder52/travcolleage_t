@@ -1,4 +1,4 @@
-import {Card, Col, Container, Carousel, Row} from 'react-bootstrap';
+import {Card, Col, Container, Carousel, Row, Button} from 'react-bootstrap';
 import './style/Section6.css';
 import {AiFillStar} from 'react-icons/ai';
 
@@ -15,11 +15,14 @@ const Section6 = () => {
                     abroad journey.
                 </p>
             </div>
-            <div className="d-none d-lg-block  d-md-none text-center">
+            <div className="d-none d-lg-block  d-md-none ">
                 <Section6Cardbig />
             </div>
             <div className="d-lg-none  d-xs-block d-sm-block d-md-block ">
                 <Section6Cardsmall />
+            </div>
+            <div className="section6-btn-container text-center">
+                <Button className=" section6-btn">View all Testimonials</Button>
             </div>
         </div>
     );
@@ -30,7 +33,7 @@ const Section6Cardbig = () => {
     return (
         <div>
             <div className="section6-card">
-                <Container>
+                <div style={{paddingLeft: '100px', paddingRight: '100px'}}>
                     <Row>
                         <Col xs={12} md={4}>
                             <div className="avatar">
@@ -127,7 +130,7 @@ const Section6Cardbig = () => {
                             </Card>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </div>
         </div>
     );
