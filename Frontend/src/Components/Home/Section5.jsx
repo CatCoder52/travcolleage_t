@@ -162,10 +162,10 @@ const Section5 = () => {
                 </Slider>
             </div>
             <div className="section5-contact-us">
-                    <p className="section5-contact-us-text text-center">
-                    Are you a high school admin? <span style={{fontWeight: "bolder"}}>Contact Us</span>
-                    </p>
-                </div>
+                <p className="section5-contact-us-text text-center">
+                    Are you a high school admin? <span style={{fontWeight: 'bolder'}}>Contact Us</span>
+                </p>
+            </div>
         </div>
     );
 };

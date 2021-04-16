@@ -1,0 +1,30 @@
+.footer-body {
+    background-color: #ffffff;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+.footer-header-text {
+    font-size: 25px;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.8;
+    line-height: 2em;
+}
+.footer-container{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* =========mobile screen====== */
+@media screen and (max-width: 479px) {
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
