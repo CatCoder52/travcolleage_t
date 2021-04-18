@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
+app.use(cors());
+
+
+// route api from setion 1 file
 app.get('/section_1', (req, res) => {
     const data = {
         status: 'success',
@@ -13,7 +18,7 @@ app.get('/section_1', (req, res) => {
             iamge_3: 'https://trav4college.com/assets/images/home/hero-3.jpg'
         }
     };
-    res.status(400).json(data, {status: status.code});
+    res.status(200).json(data);
 });
 
 app.get('/section_3', (req, res) => {});

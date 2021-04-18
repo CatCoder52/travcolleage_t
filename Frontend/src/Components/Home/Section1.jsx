@@ -1,7 +1,28 @@
-import {Col, Container, Row, Button} from 'react-bootstrap';
+import {Col, Row, Button} from 'react-bootstrap';
 import './style/Section1.css';
+import {useEffect, useState} from 'react';
+import axios from 'axios';
 
 const Section1 = () => {
+    const [state, setstate] = useState({});
+
+    const apiCall = () => {
+        axios
+            .get('http://localhost:5000/section_1', {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                }
+            })
+            .then(res => {
+                setstate(res.data.data);
+                console.log(res.data);
+            });
+    };
+
+    useEffect(() => {
+        apiCall();
+    }, []);
     return (
         <div className="section1-body">
             <div className="section-container">
@@ -10,10 +31,7 @@ const Section1 = () => {
                         <p className="txt1">
                             Your College Journey <br /> Starts Here
                         </p>
-                        <p className="txt2">
-                            Trav4College offers a robust platform that includes rich details on admissions, student
-                            profiles, cost of study, graduate outcomes and much more.
-                        </p>
+                        <p className="txt2">{state.text_2}</p>
 
                         <div className="btn-container">
                             <Button className="btn1">Signup</Button>
@@ -24,24 +42,15 @@ const Section1 = () => {
                     <Col className="section1-iamge-section" xs={12} sm={12} md={12} lg={6} xl={6}>
                         <Row>
                             <Col xs={6}>
-                                <img
-                                    className="image1"
-                                    src={'https://trav4college.com/assets/images/home/hero-1.jpg'}
-                                />
+                                <img className="image1" src={state.image_1} />
                             </Col>
                             <Col xs={6}>
                                 <Row>
                                     <Col xs={12}>
-                                        <img
-                                            className="image2"
-                                            src={'https://trav4college.com/assets/images/home/hero-2.jpg'}
-                                        />
+                                        <img className="image2" src={state.image_2} />
                                     </Col>
                                     <Col xs={12}>
-                                        <img
-                                            className="image3"
-                                            src={'https://trav4college.com/assets/images/home/hero-3.jpg'}
-                                        />
+                                        <img className="image3" src={state.image_3} />
                                     </Col>
                                 </Row>
                             </Col>
