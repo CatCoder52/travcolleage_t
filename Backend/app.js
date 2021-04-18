@@ -53,14 +53,19 @@ app.get('/section_4', (req, res) => {
 });
 
 // route api from setion 5 file
-app.get('/section_4', (req, res) => {
+app.get('/section_5', (req, res) => {
     const data = {
         status: 'success',
         message: 'section found',
         data: {
-            text_header: '700+ College Partners',
+            text_header: '100+ Highschools trust us',
             text_1:
-                'Trav4College is your window to discovering some of the best colleges and universities around the world and all they have to offer.'
+                'Choosing the right school is key to a student’s success in achieving his/her academic goals. Trav4College, coupled with a trusted network of accredited schools, is set up to help students successfully enroll in schools best suited for them.',
+            iamges: [
+                'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75',
+                'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75',
+                'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
+            ]
         }
     };
     res.status(200).json(data);

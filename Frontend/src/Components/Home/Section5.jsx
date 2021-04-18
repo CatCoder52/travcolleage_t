@@ -1,8 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
-
 import {Col, Row, Card} from 'react-bootstrap';
 import './style/Section5.css';
+import {useEffect, useState} from 'react';
+import axios from 'axios';
+import url from '../../url';
 
 const Section5 = () => {
     let settings1 = {
@@ -19,146 +21,61 @@ const Section5 = () => {
         slidesToShow: 1,
         slidesToScroll: 2
     };
+
+    const [state, setstate] = useState({});
+
+    const apiCall = () => {
+        axios
+            .get(`${url}/section_5`, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                }
+            })
+            .then(res => {
+                setstate(res.data.data);
+                console.log(res.data);
+            });
+    };
+
+    useEffect(() => {
+        apiCall();
+    }, []);
     return (
         <div className="section5-body">
             <div className="section5-topic">
-                <p className="section5-topic-text text-center">100+ Highschools trust us</p>
+                <p className="section5-topic-text text-center">{state.text_header}</p>
                 <div className="section5-sub">
-                    <p className="section5-sub-text text-center">
-                        Choosing the right school is key to a student’s success in achieving his/her academic goals.
-                        Trav4College, coupled with a trusted network of accredited schools, is set up to help students
-                        successfully enroll in schools best suited for them.
-                    </p>
+                    <p className="section5-sub-text text-center">{state.text_1}</p>
                 </div>
             </div>
             <div style={{paddingLeft: '25px', paddingRight: '25px'}}>
                 {/* Desktop view */}
+
                 <Slider className="d-none d-lg-block  d-md-none text-center" {...settings1}>
-                    <Row>
-                        <Col xm={4}>
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={4}>
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={4}>
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={4}>
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={4}>
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
+                    {state.iamges?.map(data => (
+                        <Row>
+                            <Col xm={4}>
+                                <Card className="border-0">
+                                    <Card.Img variant="top" src={data} />
+                                </Card>
+                            </Col>
+                        </Row>
+                    ))}
                 </Slider>
 
                 {/* Mobile view */}
 
                 <Slider className="d-lg-none  d-xs-block d-sm-block d-md-block " {...settings2}>
-                    <Row>
-                        <Col xm={12} className="px-0 py-0">
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={12} className="px-0 py-0">
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={12} className="px-0 py-0">
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={12} className="px-0 py-0">
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xm={12} className="px-0 py-0">
-                            <Card className="border-0">
-                                <Card.Img
-                                    variant="top"
-                                    src={
-                                        'https://trav4college.com/_next/image?url=%2Fassets%2Fimages%2Fhome%2Ftrust-2.jpg&w=640&q=75'
-                                    }
-                                />
-                            </Card>
-                        </Col>
-                    </Row>
+                    {state.iamges?.map(data => (
+                        <Row>
+                            <Col xm={12} className="px-0 py-0">
+                                <Card className="border-0">
+                                    <Card.Img variant="top" src={data} />
+                                </Card>
+                            </Col>
+                        </Row>
+                    ))}
                 </Slider>
             </div>
             <div className="section5-contact-us">
