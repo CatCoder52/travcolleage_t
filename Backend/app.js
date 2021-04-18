@@ -71,4 +71,44 @@ app.get('/section_5', (req, res) => {
     res.status(200).json(data);
 });
 
+// route api from setion 6 file
+app.get('/section_6', (req, res) => {
+    const data = {
+        status: 'success',
+        message: 'section found',
+        data: {
+            text_header: 'Trusted by thousands of Aspiring College Students',
+            text_1:
+                'Watch reviews from out past clients about how Trav4College was able to help them in their study abroad journey.',
+            person: [
+                {
+                    full_name: 'Ibe Andyson',
+                    education_level: 'High School Student',
+                    text:
+                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga animi magnam perspiciatis qui iusto officiis quibusdam! Voluptatibus officiis delectus modi vero. Soluta est, totam impedit deserunt facilis ipsam reiciendis.',
+                    rating: '4.5',
+                    image: 'https://trav4college.com/assets/images/user-1.png'
+                },
+                {
+                    full_name: 'Joy Ada',
+                    education_level: 'High School Student',
+                    text:
+                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga animi magnam perspiciatis qui iusto officiis quibusdam! Voluptatibus officiis delectus modi vero. Soluta est, totam impedit deserunt facilis ipsam reiciendis.',
+                    rating: '3.5',
+                    image: 'https://trav4college.com/assets/images/user-3.png'
+                },
+                {
+                    full_name: '',
+                    education_level: 'High School Student',
+                    text:
+                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga animi magnam perspiciatis qui iusto officiis quibusdam! Voluptatibus officiis delectus modi vero. Soluta est, totam impedit deserunt facilis ipsam reiciendis.',
+                    rating: '3.5',
+                    image: 'https://trav4college.com/assets/images/user-2.png'
+                }
+            ]
+        }
+    };
+    res.status(200).json(data);
+});
+
 module.exports = app;
