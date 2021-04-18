@@ -98,7 +98,7 @@ app.get('/section_6', (req, res) => {
                     image: 'https://trav4college.com/assets/images/user-3.png'
                 },
                 {
-                    full_name: '',
+                    full_name: 'Joel James',
                     education_level: 'High School Student',
                     text:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fuga animi magnam perspiciatis qui iusto officiis quibusdam! Voluptatibus officiis delectus modi vero. Soluta est, totam impedit deserunt facilis ipsam reiciendis.',
@@ -106,6 +106,18 @@ app.get('/section_6', (req, res) => {
                     image: 'https://trav4college.com/assets/images/user-2.png'
                 }
             ]
+        }
+    };
+    res.status(200).json(data);
+});
+
+// route api from setion 8 file
+app.get('/section_8', (req, res) => {
+    const data = {
+        status: 'success',
+        message: 'section found',
+        data: {
+            text_header: 'For Aspiring College Students & Parents Sign up for free today.'
         }
     };
     res.status(200).json(data);
