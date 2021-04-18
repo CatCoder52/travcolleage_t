@@ -2,13 +2,14 @@ import {Col, Row, Button} from 'react-bootstrap';
 import './style/Section1.css';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import url from '../../url';
 
 const Section1 = () => {
     const [state, setstate] = useState({});
 
     const apiCall = () => {
         axios
-            .get('http://localhost:5000/section_1', {
+            .get(`${url}/section_1`, {
                 headers: {
                     'Content-Type': 'application/json',
                     Accept: 'application/json'

@@ -14,8 +14,8 @@ app.get('/section_1', (req, res) => {
             text_2:
                 'Trav4College offers a robust platform that includes rich details on admissions, student profiles, cost of study, graduate outcomes and much more.',
             image_1: 'https://trav4college.com/assets/images/home/hero-1.jpg',
-            iamge_2: 'https://trav4college.com/assets/images/home/hero-2.jpg',
-            iamge_3: 'https://trav4college.com/assets/images/home/hero-3.jpg'
+            image_2: 'https://trav4college.com/assets/images/home/hero-2.jpg',
+            image_3: 'https://trav4college.com/assets/images/home/hero-3.jpg'
         }
     };
     res.status(200).json(data);
