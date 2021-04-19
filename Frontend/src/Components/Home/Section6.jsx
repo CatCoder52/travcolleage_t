@@ -59,7 +59,7 @@ const Section6Cardbig = props => {
                             <Col xs={12} md={4}>
                                 <div className="avatar">
                                     <img
-                                    alt="an image"
+                                        alt="pic"
                                         style={{height: '130px', width: '130px', borderRadius: '50%', padding: '7%'}}
                                         src={data.image}
                                         roundedCircle
@@ -105,7 +105,7 @@ const Section6Cardsmall = props => {
                                 style={{height: '130px', width: '130px', borderRadius: '50%', padding: '7%'}}
                                 src={data.image}
                                 roundedCircle
-                                alt="an image"
+                                alt="pic"
                             />
                         </div>
                         <Card style={{backgroundColor: '#d4f1ef', marginTop: '10%'}} className="border-0">

@@ -35,8 +35,8 @@ const Section8 = () => {
                         <div className="section4-1st-col">
                             <p className="section4-header-text">{state.text_header}</p>
                             <div className="section8-app-icon-vendor">
-                                <img alt="an image" className="icon-style" src={AndroidIcon} />
-                                <img  alt="an image" className="icon-style" src={IosIcon} />
+                                <img  alt="pic" className="icon-style" src={AndroidIcon} />
+                                <img  alt="pic" className="icon-style" src={IosIcon} />
                             </div>
                         </div>
                     </Col>
