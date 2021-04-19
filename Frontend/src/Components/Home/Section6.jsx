@@ -1,4 +1,4 @@
-import {Card, Col, Container, Carousel, Row, Button} from 'react-bootstrap';
+import {Card, Col, Carousel, Row, Button} from 'react-bootstrap';
 import './style/Section6.css';
 import {AiFillStar} from 'react-icons/ai';
 import {useEffect, useState} from 'react';
@@ -59,6 +59,7 @@ const Section6Cardbig = props => {
                             <Col xs={12} md={4}>
                                 <div className="avatar">
                                     <img
+                                    alt="an image"
                                         style={{height: '130px', width: '130px', borderRadius: '50%', padding: '7%'}}
                                         src={data.image}
                                         roundedCircle
@@ -104,6 +105,7 @@ const Section6Cardsmall = props => {
                                 style={{height: '130px', width: '130px', borderRadius: '50%', padding: '7%'}}
                                 src={data.image}
                                 roundedCircle
+                                alt="an image"
                             />
                         </div>
                         <Card style={{backgroundColor: '#d4f1ef', marginTop: '10%'}} className="border-0">

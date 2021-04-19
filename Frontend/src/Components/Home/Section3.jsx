@@ -1,4 +1,4 @@
-import {Card, Row, Col, Image, Container} from 'react-bootstrap';
+import {Card, Row, Col, Image} from 'react-bootstrap';
 import './style/Section3.css';
 import Icon1 from '../../assets/rocket.png';
 import Icon2 from '../../assets/school.png';

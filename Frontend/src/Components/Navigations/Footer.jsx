@@ -70,6 +70,7 @@ const Footer = () => {
 
                     <div className="pt-4">
                         <img
+                            alt="an image"
                             style={{height: '20px'}}
                             className="mr-2 ml-3"
                             src={'https://trav4college.com/assets/icons/nigeria.svg'}
@@ -78,6 +79,7 @@ const Footer = () => {
                     </div>
                     <div className="pt-4">
                         <img
+                            alt="an image"
                             style={{height: '20px'}}
                             className="mr-2 ml-3"
                             src={'https://trav4college.com/assets/icons/united-states.svg'}

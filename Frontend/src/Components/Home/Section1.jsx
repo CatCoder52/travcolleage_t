@@ -43,15 +43,15 @@ const Section1 = () => {
                     <Col className="section1-iamge-section" xs={12} sm={12} md={12} lg={6} xl={6}>
                         <Row>
                             <Col xs={6}>
-                                <img className="image1" src={state.image_1} />
+                                <img className="image1" alt="an image" src={state.image_1} />
                             </Col>
                             <Col xs={6}>
                                 <Row>
                                     <Col xs={12}>
-                                        <img className="image2" src={state.image_2} />
+                                        <img className="image2" alt="an image" src={state.image_2} />
                                     </Col>
                                     <Col xs={12}>
-                                        <img className="image3" src={state.image_3} />
+                                        <img className="image3" alt="an image" src={state.image_3} />
                                     </Col>
                                 </Row>
                             </Col>
